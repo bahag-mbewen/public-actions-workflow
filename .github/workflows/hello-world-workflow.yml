@@ -10,8 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: actions/checkout@v4
-      - id: foo
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Hello World Action
+        id: foo
         uses: bahag-mbewen/public-actions/actions/hello-world
         with:
           who-to-greet: 'Mona the Octocat'
