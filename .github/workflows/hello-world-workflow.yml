@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: bahag-mbewen/public-actions/hello-world
+        uses: bahag-mbewen/public-actions/actions/hello-world
         with:
           who-to-greet: 'Mona the Octocat'
       - run: echo random-number ${{ steps.foo.outputs.random-number }}
